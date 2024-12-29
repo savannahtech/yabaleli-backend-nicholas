@@ -1,0 +1,749 @@
+{
+	"info": {
+		"_postman_id": "1a76ec51-c6f8-4589-8d0e-cdc43b000853",
+		"name": "betodds",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1138670"
+	},
+	"item": [
+		{
+			"name": "placebet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"B1\",\n    \"userId\": \"67691a68654794f74316bd08\",\n    \"gameId\": \"G1\",\n    \"betType\": \"winner\",\n    \"pick\": \"home\",\n    \"amount\": 50,\n    \"odds\": 1.8\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/v1/api/bet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"api",
+						"bet"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"B1\",\n    \"userId\": \"U1\",\n    \"gameId\": \"G1\",\n    \"betType\": \"winner\",\n    \"pick\": \"home\",\n    \"amount\": 50,\n    \"odds\": 1.8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/api/bet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"api",
+								"bet"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "142"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8e-dY6eQRMIBU6t0ya5RhZ/mwJtCfg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Dec 2024 05:08:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"B6\",\n        \"userId\": \"U1\",\n        \"gameId\": \"G1\",\n        \"betType\": \"winner\",\n        \"pick\": \"home\",\n        \"amount\": 50,\n        \"odds\": 4.78\n    },\n    \"message\": \"success\",\n    \"statusCode\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"B1\",\n    \"userId\": \"U1\",\n    \"gameId\": \"G1\",\n    \"betType\": \"winner\",\n    \"pick\": \"home\",\n    \"amount\": 50,\n    \"odds\": 1.8\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/v1/api/bet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"api",
+						"bet"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"B1\",\n    \"userId\": \"U1\",\n    \"gameId\": \"G1\",\n    \"betType\": \"winner\",\n    \"pick\": \"home\",\n    \"amount\": 50,\n    \"odds\": 1.8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/api/bet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"api",
+								"bet"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "142"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8e-dY6eQRMIBU6t0ya5RhZ/mwJtCfg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Dec 2024 05:08:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"B6\",\n        \"userId\": \"U1\",\n        \"gameId\": \"G1\",\n        \"betType\": \"winner\",\n        \"pick\": \"home\",\n        \"amount\": 50,\n        \"odds\": 4.78\n    },\n    \"message\": \"success\",\n    \"statusCode\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "settleBet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n    \"userId\": \"67691a68654794f74316bd08\",\n    \"gameId\": \"G1\",\n    \"betId\": \"67691d8f516ab6aebf0675f4\",\n    \"won\": true\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/v1/api/bet/settle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"api",
+						"bet",
+						"settle"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"B1\",\n    \"userId\": \"U1\",\n    \"gameId\": \"G1\",\n    \"betType\": \"winner\",\n    \"pick\": \"home\",\n    \"amount\": 50,\n    \"odds\": 1.8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/api/bet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"api",
+								"bet"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "142"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8e-dY6eQRMIBU6t0ya5RhZ/mwJtCfg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Dec 2024 05:08:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"B6\",\n        \"userId\": \"U1\",\n        \"gameId\": \"G1\",\n        \"betType\": \"winner\",\n        \"pick\": \"home\",\n        \"amount\": 50,\n        \"odds\": 4.78\n    },\n    \"message\": \"success\",\n    \"statusCode\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "calculateOdds",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"B1\",\n    \"userId\": \"U1\",\n    \"gameId\": \"G1\",\n    \"betType\": \"winner\",\n    \"pick\": \"home\",\n    \"amount\": 50,\n    \"odds\": 1.8\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/v1/api/bet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"api",
+						"bet"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"B1\",\n    \"userId\": \"U1\",\n    \"gameId\": \"G1\",\n    \"betType\": \"winner\",\n    \"pick\": \"home\",\n    \"amount\": 50,\n    \"odds\": 1.8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/api/bet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"api",
+								"bet"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "142"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8e-dY6eQRMIBU6t0ya5RhZ/mwJtCfg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Dec 2024 05:08:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"B6\",\n        \"userId\": \"U1\",\n        \"gameId\": \"G1\",\n        \"betType\": \"winner\",\n        \"pick\": \"home\",\n        \"amount\": 50,\n        \"odds\": 4.78\n    },\n    \"message\": \"success\",\n    \"statusCode\": 200\n}"
+				},
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"gameId\": \"G1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/api/bet/odds/calculate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"api",
+								"bet",
+								"odds",
+								"calculate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "119"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"77-FvtELDBu5lMIOmIMy9jPLXr4vok\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Dec 2024 05:18:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"gameId\": \"G1\",\n        \"timeElapsed\": 67,\n        \"eventType\": \"substitution\",\n        \"team\": \"home\"\n    },\n    \"message\": \"success\",\n    \"statusCode\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "betHistory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/v1/api/bet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"api",
+						"bet"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"B1\",\n    \"userId\": \"U1\",\n    \"gameId\": \"G1\",\n    \"betType\": \"winner\",\n    \"pick\": \"home\",\n    \"amount\": 50,\n    \"odds\": 1.8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/api/bet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"api",
+								"bet"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "433"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b1-UP0sFnraHdJMwm8JyyusKfYeY04\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Dec 2024 05:14:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": \"B1\",\n            \"userId\": \"U1\",\n            \"gameId\": \"G1\",\n            \"betType\": \"winner\",\n            \"pick\": \"home\",\n            \"amount\": 50,\n            \"odds\": 1.8\n        },\n        {\n            \"id\": \"B4\",\n            \"userId\": \"U1\",\n            \"gameId\": \"G2\",\n            \"betType\": \"winner\",\n            \"pick\": \"home\",\n            \"amount\": 25,\n            \"odds\": 1.5\n        },\n        {\n            \"id\": \"B5\",\n            \"userId\": \"U1\",\n            \"gameId\": \"G1\",\n            \"betType\": \"winner\",\n            \"pick\": \"home\",\n            \"amount\": 50,\n            \"odds\": 3.29\n        },\n        {\n            \"id\": \"B6\",\n            \"userId\": \"U1\",\n            \"gameId\": \"G1\",\n            \"betType\": \"winner\",\n            \"pick\": \"home\",\n            \"amount\": 50,\n            \"odds\": 4.78\n        }\n    ],\n    \"message\": \"success\",\n    \"statusCode\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "leaderBoard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/v1/api/bet/leaderboard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"api",
+						"bet",
+						"leaderboard"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"B1\",\n    \"userId\": \"U1\",\n    \"gameId\": \"G1\",\n    \"betType\": \"winner\",\n    \"pick\": \"home\",\n    \"amount\": 50,\n    \"odds\": 1.8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/api/bet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"api",
+								"bet"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "433"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b1-UP0sFnraHdJMwm8JyyusKfYeY04\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Dec 2024 05:14:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": \"B1\",\n            \"userId\": \"U1\",\n            \"gameId\": \"G1\",\n            \"betType\": \"winner\",\n            \"pick\": \"home\",\n            \"amount\": 50,\n            \"odds\": 1.8\n        },\n        {\n            \"id\": \"B4\",\n            \"userId\": \"U1\",\n            \"gameId\": \"G2\",\n            \"betType\": \"winner\",\n            \"pick\": \"home\",\n            \"amount\": 25,\n            \"odds\": 1.5\n        },\n        {\n            \"id\": \"B5\",\n            \"userId\": \"U1\",\n            \"gameId\": \"G1\",\n            \"betType\": \"winner\",\n            \"pick\": \"home\",\n            \"amount\": 50,\n            \"odds\": 3.29\n        },\n        {\n            \"id\": \"B6\",\n            \"userId\": \"U1\",\n            \"gameId\": \"G1\",\n            \"betType\": \"winner\",\n            \"pick\": \"home\",\n            \"amount\": 50,\n            \"odds\": 4.78\n        }\n    ],\n    \"message\": \"success\",\n    \"statusCode\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/v1/api/bet/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"api",
+						"bet",
+						"health"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"B1\",\n    \"userId\": \"U1\",\n    \"gameId\": \"G1\",\n    \"betType\": \"winner\",\n    \"pick\": \"home\",\n    \"amount\": 50,\n    \"odds\": 1.8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/api/bet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"api",
+								"bet"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "433"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b1-UP0sFnraHdJMwm8JyyusKfYeY04\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Dec 2024 05:14:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": \"B1\",\n            \"userId\": \"U1\",\n            \"gameId\": \"G1\",\n            \"betType\": \"winner\",\n            \"pick\": \"home\",\n            \"amount\": 50,\n            \"odds\": 1.8\n        },\n        {\n            \"id\": \"B4\",\n            \"userId\": \"U1\",\n            \"gameId\": \"G2\",\n            \"betType\": \"winner\",\n            \"pick\": \"home\",\n            \"amount\": 25,\n            \"odds\": 1.5\n        },\n        {\n            \"id\": \"B5\",\n            \"userId\": \"U1\",\n            \"gameId\": \"G1\",\n            \"betType\": \"winner\",\n            \"pick\": \"home\",\n            \"amount\": 50,\n            \"odds\": 3.29\n        },\n        {\n            \"id\": \"B6\",\n            \"userId\": \"U1\",\n            \"gameId\": \"G1\",\n            \"betType\": \"winner\",\n            \"pick\": \"home\",\n            \"amount\": 50,\n            \"odds\": 4.78\n        }\n    ],\n    \"message\": \"success\",\n    \"statusCode\": 200\n}"
+				}
+			]
+		}
+	]
+}

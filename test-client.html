@@ -1,0 +1,54 @@
+<head></head>
+
+<body>
+  <div>
+    <h4>Bet History</h4>
+    <div id="betContainer"></div>
+  </div>
+  <hr>
+  <div>
+    <h4>Bet Odds</h4>
+    <div id="betOdds"></div>
+  </div>
+  <hr>
+  <div>
+    <h4>Leader Board</h4>
+    <div id="leaderBoard"></div>
+  </div>
+  <hr>
+  <script type="text/javascript" src="https://cdn.socket.io/4.6.1/socket.io.js"></script>
+  <script type="text/javascript">
+    const user = '7eb00d95-9462-482b-afcd-60901fe374cb'
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+      get: (searchParams, prop) => searchParams.get(prop),
+    });
+    const is = io('http://localhost:4000/bet-sessions', {
+      auth: {
+        token: user,
+        room: 'webClient',
+      },
+    });
+
+    is.on('connect', () => {
+      console.log(`${user} user connected`);
+    });
+
+    is.on('HealthPulse', (data) => {
+      console.log('health_pulse', data);
+    });
+
+    is.on('UpdateLiveOdds', (data) => {
+      document.getElementById('betOdds').innerHTML = JSON.stringify(data)
+      console.log('UpdateLiveOdds', data.data.message);
+    });
+
+    is.on('PlaceBet', (data) => {
+      document.getElementById('betContainer').innerHTML = JSON.stringify(data)
+      console.log('PlaceBet', data.data.message);
+    });
+    is.on('LeaderBoard', (data) => {
+      document.getElementById('leaderBoard').innerHTML = JSON.stringify(data)
+      console.log('LeaderBoard', data.data.message);
+    });
+  </script>
+</body>
